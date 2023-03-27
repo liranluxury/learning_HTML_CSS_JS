@@ -55,4 +55,4 @@ const animalVoice = function(animal, animalName) {
                     return animalName + " makes some sounds.";
     } 
 }
-console.log(animalVoice("cat", "Richard"));
+console.log(animalVoice("tiger", "Richard"));
