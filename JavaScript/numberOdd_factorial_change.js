@@ -64,17 +64,17 @@ for (let i=1; i<18; i++){
 }
 
 
-let result = '';
-const length = 7;
-for (let i = 1; i < length; i++){
-    for (let j = 0; j < i; j++){
-        result += "*";
-    }
-    result +='\n';
-}
+// let result = '';
+// const length = 7;
+// for (let i = 1; i < length; i++){
+//     for (let j = 0; j < i; j++){
+//         result += "*";
+//     }
+//     result +='\n';
+// }
 
 
-console.log(result);
+// console.log(result);
 
 
 first: for (let i = 1; i < 3; i++){ 
@@ -126,8 +126,19 @@ let a = 2
         console.log(a); a++
     }
 
-    const arr = [];
-    for (let i = 5; i<= 11; i++){
-        arr[i-5]=i;
+    // const arr = [];
+    // for (let i = 5; i<= 11; i++){
+    //     arr[i-5]=i;
+    // }
+    // console.log(arr);
+
+    const arr = [3, 5, 8, 16, 20, 23, 50];
+    const result = [];
+    for (let i = 0; i < arr.length; i++){
+        result[i] = arr[i];
     }
-    console.log(arr);
+    
+    console.log(result);
+    return result;
+
+const data = [5, 10, 'Shopping', 20, 'Homework'];
