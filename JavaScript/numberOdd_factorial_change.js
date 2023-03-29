@@ -77,4 +77,20 @@ for (let i = 1; i < length; i++){
 console.log(result);
 
 
+first: for (let i = 1; i < 3; i++){ 
+    console.log(`First level: ${i}`);
+    for (let j = 0; j < i; j++){
+        console.log(`Second level: ${j}`);
+     for (let k = 0; k < i; k++){
+        if (k === 2) continue first;
+        console.log(`Third level: ${k}`);  
+     }   
+    }
+   
+}
+
+
+console.log(result);
+
+
 
