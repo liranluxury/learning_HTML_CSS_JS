@@ -24,18 +24,18 @@ function changeSpaceToUnderscore(text){
 }
 console.log(changeSpaceToUnderscore('My name is Liran'));
 
-let num = 50;
-while (num < 55){
-    console.log(num);
-    num++;
+let numb = 50;
+while (numb < 55){
+    console.log(numb);
+    numb++;
 }
 
-let num = 50;
+let numbr = 50;
 do {
-    console.log(num);
-    num++;
+    console.log(numbr);
+    numbr++;
 }
-while (num < 55);
+while (numbr < 55);
 
 for (let i=1; i<8; i++){
     console.log(i);
@@ -64,7 +64,17 @@ for (let i=1; i<18; i++){
 }
 
 
+let result = '';
+const length = 7;
+for (let i = 1; i < length; i++){
+    for (let j = 0; j < i; j++){
+        result += "*";
+    }
+    result +='\n';
+}
 
+
+console.log(result);
 
 
 
