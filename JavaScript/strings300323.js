@@ -68,18 +68,44 @@ users *=2;
 console.log(users);
 
 
-// for (let num = 0; num <=5; num++){
-//     console.log(num);
-// }
+for (let num = 0; num <=5; num++){
+    console.log(num);
+}
 
-// let = 5;
-// do {
-//     console.log(num);
-//     num++
-// }
+let num = 0;
+do {
+    console.log(num);
+    num++
+}
+while (num <= 5)
+
+
+let numr = 8;
+while (numr){
+   console.log(numr);
+   numr--;
+}
 
 
 
+for (let numm = 0; numm < 3; numm++){
+    console.log (`Number: ${numm}`);
+}
+
+
+let numn = 0;
+while (numn < 3){
+    console.log(`Number: ${numn}`);
+    numn++;
+}
+
+for (let num = 0; num < 14; num++){
+    // for  (let size = 0; size < 4; size++){
+    // console.log(size); 
+    // if (size == 2) break;
+    console.log(num);
+    if (num == 8) break;
+} 
 
 
 const liniyi = 55;
