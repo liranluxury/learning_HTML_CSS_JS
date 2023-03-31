@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 let text = 'Helllllo!';
 for(const charrry of text){
     console.log(charrry);
@@ -46,15 +46,51 @@ for(const charrry of text){
 // console.log(result);
 
 
-const lines = 5;
+const lines = 4;
 let result = '';
 for(let i=0; i<=lines; i++){
-    for(let j=0; j<lines-i; j++){
-        result+=' ';
+    for(let j=0; j<=lines-i-1; j++){
+        result+='-';
     }
-    for(let j=0; j<2*i+1; j++){
+    for(let j=0; j<1+2*i; j++){
         result+='*';
     }
     result +='\n';
 }
 console.log(result);
+
+
+let users = 5;
+console.log(users);
+users +=3;
+console.log(users);
+users *=2;
+console.log(users);
+
+
+// for (let num = 0; num <=5; num++){
+//     console.log(num);
+// }
+
+// let = 5;
+// do {
+//     console.log(num);
+//     num++
+// }
+
+
+
+
+
+const liniyi = 55;
+let res = '';
+for(let i = 0; i<liniyi; i++ ){
+    for(let j = 0; j <= liniyi-1-i; j++){
+        res += '-';
+    }
+    for(let j = 0; j<1+2*i; j++ ){
+        res += '*';
+    }
+    res += '\n';
+}
+console.log(res);
