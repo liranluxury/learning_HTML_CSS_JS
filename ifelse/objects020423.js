@@ -95,3 +95,38 @@ function promotion(result){
 
 promotion(convert(200, usdCurr));
 
+
+
+function sayHello(userName) {
+    return `Hello, ${userName}!`;
+
+}
+sayHello ('Anton');
+
+function returnNeighboringNumbers(numm) {
+    return [numm - 1, numm, numm +1]; 
+}
+returnNeighboringNumbers(2);
+
+function getMathResult(num, times) {
+    if (typeof(times) !== 'number' || times <= 0) {
+        return num;
+    }
+
+    let str = '';
+
+    for (let i = 1; i <= times; i++) {
+        if (i === times) {
+            str += `${num * i}`;
+            // Тут без черточек в конце
+        } else {
+            str += `${num * i}---`;
+            // Это тоже самое, что и
+            // str = str + num * i + "---"
+        }
+    }
+
+    return str;
+}
+
+getMathResult(10, 5);
