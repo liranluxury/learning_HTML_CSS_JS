@@ -47,16 +47,51 @@ const cars = [
     lastName: 'White',
     regYear: 2017,
     hasDiscount : true,
+    discount: 0,
     discountCalculation: function(year){
         let discount;
-        let numberOfYears = 2023 - year;
+        let numberOfYears = 2023 - this.regYear;
         if(numberOfYears <= 2) {
             discount = 0;
         }
      else if(numberOfYears > 5) {
         discount = 30;
     }
-    return discount;
+    this.discount = discount;
  }
 }
-console.log(carSeller.discountCalculation(2021));
+carSeller.discountCalculation();
+console.log(carSeller);
+
+
+
+function ret(){
+    let num = 500;
+    return num;
+}
+const anotherNum = ret();
+console.log(anotherNum);
+
+
+// const usdCurr = 18;
+// const euroCurr = 23;
+// function convert (amount, curr){
+//     console.log(curr * amount);
+// }
+// convert(500, usdCurr);
+// convert(500, euroCurr);
+
+const usdCurr = 18;
+const euroCurr = 23;
+const discount = 0.9;
+
+function convert (amount, curr){
+  return curr * amount;
+}
+
+function promotion(result){
+    console.log(result * discount);
+}
+
+promotion(convert(200, usdCurr));
+
