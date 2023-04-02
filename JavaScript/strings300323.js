@@ -108,6 +108,10 @@ for (let num = 0; num < 14; num++){
 } 
 
 
+
+
+
+
 const liniyi = 55;
 let res = '';
 for(let i = 0; i<liniyi; i++ ){
@@ -120,3 +124,8 @@ for(let i = 0; i<liniyi; i++ ){
     res += '\n';
 }
 console.log(res);
+
+
+
+
+
