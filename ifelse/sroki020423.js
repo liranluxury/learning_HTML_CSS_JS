@@ -65,8 +65,18 @@ for (const key in userInfo.adress){
 // console.log(newPost(firstPost));
 
 
-
-
+const asr = [1, 2, 3]
+asr.push (5);
+console.log(asr);
+asr.pop();
+console.log(asr);
+asr.unshift ('klo');
+asr.unshift (true);
+console.log(asr);
+asr.shift();
+console.log(asr);
+asr.forEach(e => console.log(e * 2));
+asr.forEach(e => console.log(e + `${'----'}`));
 
 
 
