@@ -52,3 +52,21 @@ for (const key in userInfo.adress){
         console.log(userInfo.adress[key]);
 }
 
+// const newPost = (post, addedAt = Date()) => ({
+//     ...post, 
+//     addedAt,
+// })
+
+// const firstPost = {
+//     id : 1,
+//     author: 'Liran',
+// }
+
+// console.log(newPost(firstPost));
+
+
+
+
+
+
+
