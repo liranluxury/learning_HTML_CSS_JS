@@ -40,17 +40,17 @@ console.log(fruit.indexOf("m"));
 
 
 
-const userInfo = {
-    name: 'Vasja',
-    age: 30,
-    adress: {
-        city : "Kazan",
-        cantry: "Tatarstan"
-    }
-      }
-for (const key in userInfo.adress){
-        console.log(userInfo.adress[key]);
-}
+// const userInfo = {
+//     name: 'Vasja',
+//     age: 30,
+//     adress: {
+//         city : "Kazan",
+//         cantry: "Tatarstan"
+//     }
+//       }
+// for (const key in userInfo.adress){
+//         console.log(userInfo.adress[key]);
+// }
 
 // const newPost = (post, addedAt = Date()) => ({
 //     ...post, 
@@ -78,5 +78,22 @@ console.log(asr);
 asr.forEach(e => console.log(e * 2));
 asr.forEach(e => console.log(e + `${'----'}`));
 
+const newAsr = asr.map(e => e * 3);
+console.log(newAsr);
+console.log(asr);
 
 
+
+
+const newPost = (post, addedAt = Date()) => {
+
+    return {...post, 
+        addedAt}
+}
+
+const firstPost = {
+    id : 1,
+    author: 'Liran',
+}
+
+console.log(newPost(firstPost));

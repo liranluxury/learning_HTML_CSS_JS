@@ -54,9 +54,9 @@ const cars = [
         if(numberOfYears <= 2) {
             discount = 0;
         }
-     else if(numberOfYears > 5) {
-        discount = 30;
-    }
+        else if(numberOfYears > 5) {
+            discount = 30;
+        }
     this.discount = discount;
  }
 }
@@ -130,3 +130,5 @@ function getMathResult(num, times) {
 }
 
 getMathResult(10, 5);
+
+
