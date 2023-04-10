@@ -26,3 +26,21 @@ const link = document.getElementsByTagName("a");
 link[0].getAttribute("href");
 link[0].setAttribute("href", "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Operator_Precedence");
 
+const h1 = document.getElementById("header");
+console.log(h1.innerHTML);
+
+h1.addEventListener("click", function() {
+    this.style.color = "pink";
+});
+h1.addEventListener("click", function() {
+    this.style.fontFamily = "Arial";
+});
+
+const liElements = document.querySelectorAll("li");
+console.log(liElements);
+
+for(let i = 0; i < liElements.length; i++){
+    liElements[i].addEventListener("click", function(){
+        this.style.color = "green";
+    });
+}
