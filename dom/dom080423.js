@@ -44,3 +44,17 @@ for(let i = 0; i < liElements.length; i++){
         this.style.color = "green";
     });
 }
+
+const button = document.querySelector("button");
+
+const isBackgroundApply = 0;
+
+button.addEventListener("click", function(){
+    if (isBackgroundApply === 0){
+        document.querySelector("body").style.background = "blue";
+        isBackgroundApply = 1;
+    } else {
+            document.querySelector("body").style.background = "white";
+            isBackgroundApply = 0;
+        }
+    });
