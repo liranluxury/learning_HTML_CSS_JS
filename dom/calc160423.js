@@ -19,3 +19,19 @@ function bigResult (crazyKats, funnyDucks){
 
 bigResult(crazyKats,funnyDucks);
 
+function calcAge(){
+    return 2023 - this.birthYear
+}
+
+const userFirst = {
+    birthYear: 1993,
+    calcAge
+}
+
+const userSecond = {
+    birthYear: 1998,
+    calcAge
+}
+
+console.log(userFirst.calcAge())
+console.log(userSecond.calcAge())
