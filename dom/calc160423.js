@@ -72,4 +72,8 @@ console.log(user2);
     console.log("Ups..");
 }
 
-
+for(let i=1; i<=10; i++){
+    if(i>=2 && i<=4){console.log(`Это сообщение появилось ${i} раза`)
+} else {console.log(`Это сообщение появилось ${i} раз`)
+}
+}
