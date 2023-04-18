@@ -1,23 +1,27 @@
-'use strict';
+"use strict";
 
-function rabbitFibonachi(n){
+function rabbitFibonachi(n) {
+  let output = [];
 
-    let output = [];
-    
-    if (n === 1){
-        output = [0]
-    } else if (n === 2){
-        output = [0, 1]
-    } else {
-        output = [0, 1]
-        {
-            for (let i = 2; i < n; i++){
-                output.push(output.at(-2) + output.at(-1));
-            }
-        }
-        return output;
+  if (n === 1) {
+    output = [0];
+  } else if (n === 2) {
+    output = [0, 1];
+  } else {
+    output = [0, 1];
+    {
+      for (let i = 2; i < n; i++) {
+        output.push(output.at(-2) + output.at(-1));
+      }
     }
-   
-    }
- let res = rabbitFibonachi (15);
- console.log(res);
+    return output;
+  }
+}
+let res = rabbitFibonachi(15);
+console.log(res);
+
+let a = [];
+a[1] = 5;
+a[5] = 55;
+console.log(a.length);
+
